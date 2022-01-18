@@ -1,0 +1,91 @@
+body{
+    padding: 10px;
+}
+
+.mijoz{
+    width: 99%;
+    padding: 10px;
+    display: inline-flex;
+}
+
+.det-btn1 a{
+    text-decoration: none;
+}
+
+.det-btn1{
+    border-radius: 10px;
+    margin-top: 40px;
+    width: 130px;
+    height: 30px;
+    margin-right: 50px;
+}
+
+.mijoz-1{
+    font-size: 36px;
+    text-align: center;
+    color: #0069af;
+}
+.mijoz-12 a{
+    color: #118cdf;
+    text-decoration: none;
+}
+hr.hr12{
+    width: 550px;
+}
+hr.hr1{
+    width: 90%;
+    color: black;
+}
+.mijoz-12{
+    font-size: 36px;
+    text-align: left;
+    color: #118cdf;
+}
+em.mijoz-1{
+    padding-right: 30px;
+    text-align: center;
+}
+
+.title{
+    width: 600px;
+    height: 400px;
+    overflow: auto;
+}
+
+.creat-form{
+    border: 5px solid;
+}
+
+.title1{
+    font-size: 50px;
+    text-align: center;
+    color: #118cdf;
+
+}
+
+.img{
+    margin-left: 50px;
+    width: 500px;
+    display: inline-flex;
+    float: right;
+}
+.mijoz .img img{
+    border-radius: 100px 0 100px 100px ;
+}
+
+.about-text{
+    color: #118cdf;
+    font-size: 20px;
+}
+
+
+.about-text.ul li{
+    display: inline;
+    padding-right: 20px ;
+}
+
+
+.det-dis{
+    display: flex;
+    margin-bottom: 30px;
+}

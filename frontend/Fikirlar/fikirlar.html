@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block content %}
+</head>
+<div class="mijoz-1">Firma haqidagi fikirlar.</div>
+<hr class="hr12">
+<body>
+    {%for fikir in fikirs %}
+    <div class='mijoz-12'>
+        <a href=" {{ fikir.pk }} ">
+            <em>Kim tomonidan:</em>{{ fikir.kim_tomonidan }} </a>
+    </div>
+    <hr>
+    {%endfor%}
+    <br><br><br><br><br>
+    <button class="det-btn1" style="margin-top: -30px; float: right;"><a href="{% url 'Fikir-yaratish' %}">Fikir bildirish</a></button>
+<br><br><br><br>
+</body>
+{% endblock content %}

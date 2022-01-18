@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block content %}
+<div class="mijoz-1">Firma haqida fikir bildirish:</div>
+<hr class="hr12">
+<form method="post">
+    {% csrf_token %} 
+    {{form.as_p}}
+<br><br><br><br>
+    <ul><ul><ul><ul><button type="submit" style="margin-top: -50px; margin-left: -85px;" class="det-btn1">Taqdim etish</button></ul></ul></ul></ul>
+</form>
+
+{% endblock content %}

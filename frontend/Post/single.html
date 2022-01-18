@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{%block content%} 
+
+</head>
+<br>
+<div class="det-dis">
+    <div class='title'>
+    <em class="mijoz-1">{{ post.title }}</em>
+    <hr>
+    <br><em class="about-text">{{ post.discription}}</em>
+    </div>
+    <a href="/{{post.pk}}/pic">
+        <img src="{{post.image.url}}" alt='Yangilik rasmi!' width="450" height="450" style="margin-left: 100px ;">
+    </a>
+</div>
+{%endblock%}

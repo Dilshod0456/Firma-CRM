@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{%block content%} 
+
+</head>
+<br> 
+<div class="mijoz-1">Firmadagi so'ngi yangiliklar</div>
+<hr class="hr12">
+{% for post in post %}
+<div class="mijoz">
+  <div class="title">
+    <div class="title1">{{ post.title }}</div> <br>
+    {{ post.discription}}
+  </div>
+  <div class="img">
+    <a href="{{post.pk}}/pic">
+      <img class="homepic" src="{{post.image.url}}" alt='Yangilik rasmi!' width="500" height="400"></a>
+</div>
+</div>
+<ul><ul><button style="margin-left: 35%;" class="det-btn1" href="/{{post.pk}}"> <a href="/{{post.pk}}"> Batafsil...</a></button></ul></ul>
+
+<hr class="hr1">
+ {%endfor%}
+{%endblock%}
