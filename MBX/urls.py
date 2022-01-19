@@ -22,6 +22,7 @@ urlpatterns = [
     path('about/', AboutView.as_view(), name="Haqida"),
     path('<int:pk>/', HomePostView.as_view(), name="Single"),
     path('<int:pk>/pic', PicView.as_view(), name="Pic"),
+    path('news/<int:pk>/pic', PicView.as_view(), name="Pic"),
     path('leads/', include('leads.urls', namespace="leads")),
     path('agents/', include('agents.urls', namespace="agents")),
     path('signup/', SigupView.as_view(), name="signup"),
