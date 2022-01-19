@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-hvp)cyg%ra(2@_pj7kw@ql)c0v3m=_0#=ga*rhrb89c-6vy3&9'
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['mbfirma.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -78,8 +78,17 @@ WSGI_APPLICATION = 'MBX.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': BASE_DIR / 'db.sqlite3',
+        
+        
+        
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd3aakfflcspc4l',
+        'USER': 'ougpqhgsmlxxoh',
+        'PASSWORD':'a65a88ca2072f351849d1c3cdb166446986b04c6d553a8e3b18d5dc215f4ee1a',
+        'HOST': 'ec2-3-212-143-188.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
