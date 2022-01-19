@@ -1,0 +1,1 @@
+web: gunicorn MBX.wsgi  --log-file -
